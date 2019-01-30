@@ -1,0 +1,16 @@
+{
+  "name": "imagemanipulation",
+  "version": "0.1.0",
+  "description": "Change image size.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js  --profile=test --width=800 --heigth=600 --input=input/ --output=output/"
+  },
+  "keywords": [],
+  "author": "Goustkor <goustkor@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "sharp": "^0.21.3"
+  }
+}
