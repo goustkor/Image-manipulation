@@ -2,6 +2,6 @@
   "profile": "output",
   "width": 1280,
   "height": 720,
-  "input": "/input",
-  "output": "/output"
+  "input": "input/",
+  "output": "output/"
 }
