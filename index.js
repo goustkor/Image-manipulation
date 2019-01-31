@@ -3,11 +3,10 @@ const sharp = require("sharp");
 const { readdir } = require("fs");
 const defaultConfig = require("./config/default.json");
 
-let { profile, s, width, height, input, output } = argv;
+let { profile, width, height, input, output, s, W, H } = argv;
 
 function checkVariables() {
   if (!profile) profile = defaultConfig.profile;
-  if (!s) s = defaultConfig.s;
   if (!input) input = defaultConfig.input;
   if (!output) output = defaultStatus.output;
   if (!width) width = defaultConfig.width;
@@ -19,7 +18,8 @@ function imageManipulation() {
   readdir(input, (err, items) => {
     if (err) return console.log(err);
 
-    if (s) height = null;
+    if (s && W) height = null;
+    if (s && H) width = null;
 
     items.forEach((value, index, array) => {
       sharp(input + value)

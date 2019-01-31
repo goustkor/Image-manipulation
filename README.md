@@ -20,7 +20,8 @@ Example:
 
 --profile  
 --width  
---height
+--height  
 --input  
 --output  
--s: Keep Image Scale
+-sW: Keeps image scale based on width  
+-sH: Keeps image scale based on height
